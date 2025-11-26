@@ -1,0 +1,1 @@
+// model use mongoose too create a schema and model and for primas cannot use this folder

@@ -1,0 +1,45 @@
+for backend without mysql
+npm init -y
+express
+bcrypt
+cookie-parser
+cors
+dotenv
+jsonwebtoken
+mongoose
+multer = for image
+
+
+in env you wrote
+NODE_ENV=localhost
+port=XXXX
+JWT_SECRET= use this( node -e "console.log(require('crypto').randomBytes(64).toString('hex'))"
+)
+BASE_URL=http://localhost:{PORT}
+MON_URI= get in mongodb.com
+
+backend with sql
+
+npm init -y
+express
+bcrypt
+cookie-parser
+cors
+dotenv
+jsonwebtoken
+multer
+
+npm install prisma --save-dev
+npm install @prisma/client
+npx prisma init
+and will create .env
+
+important
+npm install nodemon --save -dev
+npm set-script start "node server.js"
+npm set-script dev "nodemon server.js"
+
+
+
+
+
