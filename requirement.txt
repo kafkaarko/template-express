@@ -35,9 +35,11 @@ npx prisma init
 and will create .env
 
 important
+npm install
 npm install nodemon --save -dev
-npm set-script start "node server.js"
-npm set-script dev "nodemon server.js"
+npm pkg set scripts.start="node server.js"
+npm pkg set scripts.dev="nodemon server.js"
+
 
 
 
