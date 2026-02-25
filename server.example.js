@@ -1,5 +1,11 @@
 // import Modules
-
+// const express = require('express');
+// const cors = require('cors');
+// const mongoose = require('mongoose');
+// const dotenv = require('dotenv');
+// const cookieParser = require('cookie-parser');
+// const path = require('path')
+// const errorMiddleware = require('./Middlewares/error.middleware');
 //routes
 // const userRoutes = require("./Routes/userRoute.js") Example route
 
@@ -18,11 +24,18 @@
 //     credentials:true,
 // })) Example CORS
 // app.use("/uploads", express.static(path.join(process.cwd(), "Uploads")))
-
+// app.set('trust proxy', 1)
 
 //routes
 // app.use("/api/user", userRoutes) Example Route
 
+
+// app.use((req, res, next) => {
+//     const error = new Error(`Oops! Anda salah jalan. Endpoint ${req.originalUrl} tidak ditemukan`);
+//     error.statusCode = 404;
+//     next(error); // Lempar ke Global Error Middleware
+// });
+// app.use(errorMiddleware)
 
 // //listen on the port
 // mongoose.connect(process.env.MON_URI)
@@ -33,5 +46,5 @@
 //     })
 //     .catch((error) => {
 //         console.log(error)
-//     })
+//     })   
 // if use mongodb atlas

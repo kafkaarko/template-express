@@ -1,3 +1,7 @@
-const Router = express.router();
+// const express = require('express')
+// const { apiLimiter } = require("../Middlewares/rateLimit.middleware");
 
-Router.get('/products', Controller.getProducts)
+// const router = express.Router();
+// // example use ratelimit
+// router.use(apiLimiter)
+// router.get('/products', Controller.getProducts)
